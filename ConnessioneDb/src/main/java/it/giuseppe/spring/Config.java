@@ -13,6 +13,7 @@ public class Config {
 	 @Bean
 	    public Connessione getConnessione() {
 		 
-		 return new Connessione();
+		 return new Connessione("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/gestione_surgelati", "giuseppe", "peppe", "SELECT nome_cliente, indirizzo_cliente FROM cliente");
 	 }
+	 
 }
